@@ -396,3 +396,390 @@ Also may be tested:
 5. Verify multimedia subsystems with dxdiag.
 6. Optimize startup to improve performance and stability.
 
+## 4. Peripheral & Network Integration
+
+Once the OS is installed and configured, peripherals and network connections must be set up for both functionality and reliability.  
+This stage covers **printers**, **audio**, **video**, **network hardware**, and **user interaction skills**.
+
+---
+
+### 4.1 Laser Printer Process Knowledge
+
+**Example Checkpoint Question**  
+> *Which stage of the laser printing process applies toner to the latent image on the drum?*  
+**Answer:** Developing stage.
+
+**Why This Matters:**  
+Knowing the stages (charging, exposing, developing, transferring, fusing, cleaning) allows targeted troubleshooting. If prints are blank but paper feeds, the problem could be in the developing stage or laser exposure.
+
+**Broader Exam Connection:**  
+You may also be asked:
+- Which part fuses toner to paper (fuser assembly).
+- Which part charges the drum (primary corona wire).
+- Order of the printing process.
+
+**Course Reference:** *Troubleshooting Printers*, p.2–3.
+
+---
+
+### 4.2 Printer Quality Issues
+
+**Example Checkpoint Question**  
+> *Which printer problem is often caused by using incorrect or low-quality toner?*  
+**Answer:** Poor print quality (faded or inconsistent).
+
+**Why This Matters:**  
+Toner quality impacts fusing and particle distribution. In enterprise settings, procurement standards often specify manufacturer-approved toner to avoid warranty voids.
+
+**Broader Exam Connection:**  
+Also applies to:
+- Ghosting issues from fuser problems.
+- Streaking from dirty rollers.
+- Incorrect media type causing smudging.
+
+**Course Reference:** *Troubleshooting Printers*, p.4.
+
+---
+
+### 4.3 Audio Troubleshooting
+
+**Example Checkpoint Question**  
+> *Which Windows utility can adjust default playback devices and troubleshoot audio output?*  
+**Answer:** Sound settings (mmsys.cpl).
+
+**Why This Matters:**  
+Selecting the correct playback device is essential in setups with multiple outputs (speakers, HDMI, USB headsets). Misconfiguration can appear as “no sound” even if hardware is fine.
+
+**Broader Exam Connection:**  
+Could also be asked:
+- Checking volume mixer.
+- Updating audio drivers.
+- Using dxdiag to test audio hardware.
+
+**Course Reference:** *Troubleshooting Audio*, p.2.
+
+---
+
+### 4.4 Video Troubleshooting
+
+**Example Checkpoint Question**  
+> *In video troubleshooting, what’s a likely cause if a system freezes when trying to play a video?*  
+**Answer:** Resource conflict.
+
+**Why This Matters:**  
+If two devices compete for the same I/O addresses or IRQs, system instability occurs. Modern systems manage this better, but outdated drivers or add-in cards can still cause conflicts.
+
+**Broader Exam Connection:**  
+Also applies to:
+- No signal on monitor (GPU or cable fault).
+- Distorted video (driver or GPU failure).
+- Incorrect resolution settings.
+
+**Course Reference:** *Troubleshooting Video*, p.4.
+
+---
+
+### 4.5 Network Cabling
+
+**Example Checkpoint Question**  
+> *Which cable type uses copper to transmit signals as electrical pulses?*  
+**Answer:** Twisted pair (Ethernet) cable.
+
+**Why This Matters:**  
+Twisted pair cables are the backbone of most LAN setups. Choosing CAT6 or higher is essential for gigabit speeds and future-proofing.
+
+**Broader Exam Connection:**  
+Exam could cover:
+- Straight-through vs crossover cables.
+- Fiber optic cable advantages.
+- Shielding types (STP vs UTP).
+
+**Course Reference:** *PC Troubleshooting Tips*, p.5.
+
+---
+
+### 4.6 User Interaction Skills
+
+**Example Checkpoint Question**  
+> *In client interaction, why is active listening important?*  
+**Answer:** It ensures accurate understanding of the client’s problem.
+
+**Why This Matters:**  
+Good communication prevents misdiagnosis. Asking clarifying questions and repeating back the problem builds trust and accuracy.
+
+**Broader Exam Connection:**  
+Also applies to:
+- Documenting symptoms.
+- Managing client expectations.
+- Avoiding technical jargon with non-technical users.
+
+**Course Reference:** *Interacting With Clients*, p.2–3.
+
+---
+
+### Practical Scenario: Enterprise vs. Home Build
+
+- **Enterprise Example:**  
+  A network printer produces faint output. You recall that poor-quality toner can cause this and recommend switching to approved toner, preventing warranty issues.
+  
+- **Home Example:**  
+  You connect a new gaming monitor via DisplayPort, but the PC freezes when playing a video. You check Device Manager and find the GPU driver is outdated, resolving the conflict after an update.
+
+---
+
+**Key Troubleshooting Concepts in Peripheral & Network Integration:**
+1. Understand mechanical and electrical stages of laser printing.
+2. Recognize how consumable quality impacts performance.
+3. Set correct default devices in OS-level audio settings.
+4. Diagnose resource conflicts and driver issues in video output.
+5. Select proper cabling for performance and reliability.
+6. Practice active listening to accurately capture problem details.
+
+
+## 5. Security & Maintenance
+
+A stable system isn’t just about performance — it’s also about long-term reliability and defense against security threats.  
+This stage covers **preventive maintenance**, **security logging**, **malware prevention**, and **backup strategies**.
+
+---
+
+### 5.1 Preventive Maintenance Schedules
+
+**Example Checkpoint Question**  
+> *This is a computer systems maintenance item usually only performed once or twice a year.*  
+**Answer:** Physical cleaning of the inside of the computer.
+
+**Why This Matters:**  
+Dust accumulation increases temperatures and reduces airflow, leading to shortened component lifespan. Regular internal cleaning is especially important in environments with high particulate matter.
+
+**Broader Exam Connection:**  
+Other preventive maintenance topics could include:
+- Periodic software updates.
+- Verifying backup integrity.
+- Battery health checks for UPS and laptops.
+
+**Course Reference:** *Preventive Maintenance*, p.2–3.
+
+---
+
+### 5.2 Security Event Tracking
+
+**Example Checkpoint Question**  
+> *In Windows Event Viewer, which log records user login attempts?*  
+**Answer:** Security log.
+
+**Why This Matters:**  
+Security logs record login successes and failures, account lockouts, and privilege changes. Reviewing them regularly can detect early signs of unauthorized access.
+
+**Broader Exam Connection:**  
+Could be reframed as:
+- Identifying the System log for hardware events.
+- Using Application logs for software troubleshooting.
+- Configuring audit policies for detailed logging.
+
+**Course Reference:** *Troubleshooting in Windows*, p.15.
+
+---
+
+### 5.3 Malware Prevention
+
+**Example Checkpoint Question**  
+> *What is the best first step after detecting malware on a workstation?*  
+**Answer:** Disconnect it from the network.
+
+**Why This Matters:**  
+Disconnecting prevents malware from spreading or communicating with control servers. Immediate isolation is critical in both enterprise and home setups.
+
+**Broader Exam Connection:**  
+Could also test:
+- Running antivirus in Safe Mode.
+- Using offline scanning tools.
+- Steps for incident response in security breaches.
+
+**Course Reference:** *Computer Security*, p.5–6.
+
+---
+
+### 5.4 Backup Strategy Design
+
+**Example Checkpoint Question**  
+> *What backup type only saves files changed since the last full backup?*  
+**Answer:** Incremental backup.
+
+**Why This Matters:**  
+Incremental backups are storage-efficient but require the full backup and all subsequent incrementals to restore. Enterprises often combine full + incremental to balance recovery time and resource usage.
+
+**Broader Exam Connection:**  
+Could also include:
+- Differential backups.
+- Image-based backups.
+- Cloud vs on-premise backup strategies.
+
+**Course Reference:** *Preventive Maintenance*, p.5–6.
+
+---
+
+### 5.5 Data Recovery Basics
+
+**Example Checkpoint Question**  
+> *In data recovery, what’s the safest first step when files are accidentally deleted?*  
+**Answer:** Stop writing to the drive immediately.
+
+**Why This Matters:**  
+New writes can overwrite the data’s physical location on the drive, making recovery impossible. In enterprise contexts, pulling the drive and cloning it before recovery attempts is standard practice.
+
+**Broader Exam Connection:**  
+Could be asked as:
+- Using write blockers.
+- Imaging before recovery attempts.
+- File carving tools for deleted files.
+
+**Course Reference:** *Basic Data Recovery*, p.2–3.
+
+---
+
+### Practical Scenario: Enterprise vs. Home Build
+
+- **Enterprise Example:**  
+  Security logs show multiple failed logins from a remote IP. You isolate the system, check event IDs in the Security log, and verify that no other machines are compromised.  
+  Preventive maintenance includes dust removal from desktops during quarterly on-site service.
+
+- **Home Example:**  
+  Your personal PC suddenly slows down. You find an unknown background process, disconnect from Wi-Fi, run an offline antivirus scan, and later set up a weekly incremental backup to an external drive.
+
+---
+
+**Key Troubleshooting Concepts in Security & Maintenance:**
+1. Follow preventive maintenance schedules for both hardware and software.
+2. Regularly review logs for early signs of intrusion or malfunction.
+3. Isolate infected systems before attempting cleanup.
+4. Use a layered backup strategy for faster recovery and better data protection.
+5. Protect recoverable data by avoiding unnecessary writes.
+
+
+## 6. Troubleshooting Methodology
+
+A disciplined troubleshooting process is the foundation of both PC repair and enterprise IT support.  
+Following a structured approach ensures efficiency, accuracy, and clear documentation.
+
+---
+
+### 6.1 The Standard Troubleshooting Steps
+
+**Example Checkpoint Question**  
+> *During which step in the troubleshooting process would you attempt to recreate the situation that caused the symptom?*  
+**Answer:** Test the theory.
+
+**Why This Matters:**  
+Testing the theory means reproducing the issue under controlled conditions to confirm its cause. Without confirmation, you risk applying fixes for the wrong problem.
+
+**Broader Exam Connection:**  
+Other troubleshooting steps may be tested:
+- Identify the problem.
+- Establish a theory of probable cause.
+- Establish a plan of action.
+- Verify full system functionality.
+- Document findings.
+
+**Course Reference:** *The Troubleshooting Procedure*, p.2–3.
+
+---
+
+### 6.2 Using Flowcharts
+
+**Example Checkpoint Question**  
+> *What is the main advantage of using a troubleshooting flowchart?*  
+**Answer:** It provides a logical sequence for problem resolution.
+
+**Why This Matters:**  
+Flowcharts help technicians follow a consistent path, ensuring no diagnostic steps are skipped. They’re especially useful for less experienced techs or for complex multi-stage problems.
+
+**Broader Exam Connection:**  
+Could be reframed as:
+- How to follow a decision point in a chart.
+- Benefits of branching troubleshooting logic.
+- Visual vs textual troubleshooting guides.
+
+**Course Reference:** *Troubleshooting FlowChart Poster*.
+
+---
+
+### 6.3 Gathering Information
+
+**Example Checkpoint Question**  
+> *Why is active listening a critical skill in troubleshooting?*  
+**Answer:** It ensures accurate understanding of the client’s problem.
+
+**Why This Matters:**  
+Many issues are described vaguely by users. Asking clarifying questions and summarizing back to the client prevents misdiagnosis and wasted time.
+
+**Broader Exam Connection:**  
+Other related skills:
+- Avoiding technical jargon.
+- Documenting symptoms in the client’s own words.
+- Verifying client-reported steps that caused the issue.
+
+**Course Reference:** *Interacting With Clients*, p.2–3.
+
+---
+
+### 6.4 Documentation
+
+**Example Checkpoint Question**  
+> *Why is documenting troubleshooting steps important even after a successful fix?*  
+**Answer:** To create a record for future reference and improve efficiency.
+
+**Why This Matters:**  
+Documentation helps other techs resolve similar problems faster, supports compliance requirements, and provides evidence of work completed.
+
+**Broader Exam Connection:**  
+Could be about:
+- Ticketing systems.
+- Service logs.
+- Knowledge base articles.
+
+**Course Reference:** *The Troubleshooting Procedure*, p.3.
+
+---
+
+### 6.5 Verification & Prevention
+
+**Example Checkpoint Question**  
+> *What is the final step in any troubleshooting process?*  
+**Answer:** Verify full system functionality and implement preventive measures.
+
+**Why This Matters:**  
+Ensuring the issue is truly fixed prevents repeat service calls. Preventive measures (updates, settings changes, training) reduce the chance of recurrence.
+
+**Broader Exam Connection:**  
+Could extend to:
+- Stress testing hardware after replacement.
+- Running extended diagnostics before sign-off.
+- Adding protective hardware/software after repair.
+
+**Course Reference:** *Preventive Maintenance*, p.6–7.
+
+---
+
+### Practical Scenario: Enterprise vs. Home Build
+
+- **Enterprise Example:**  
+  A user reports their network printer is offline.  
+  You gather details (active listening), test the theory by pinging the printer’s IP, find that the static IP conflicts with another device, and resolve it by changing the printer’s address.  
+  You document the fix in the service ticket system and update the network map to prevent future conflicts.
+
+- **Home Example:**  
+  Your PC randomly shuts down.  
+  You reproduce the issue by running a stress test, discover CPU temps spiking, clean dust from the heatsink, and replace dried thermal paste.  
+  You log this in your personal build notes for future reference.
+
+---
+
+**Key Troubleshooting Concepts in Methodology:**
+1. Always follow a structured problem-solving framework.
+2. Use flowcharts for logical decision-making.
+3. Gather accurate information through client interaction.
+4. Document every step for future efficiency.
+5. Verify fixes and implement preventive measures to avoid repeat issues.
+
+
