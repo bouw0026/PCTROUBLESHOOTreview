@@ -18,46 +18,27 @@
 
 ---
 
-<details>
-<summary><strong>Q:</strong> When a computer does not power on at all, what is the most important first step in troubleshooting?</summary>
+## 1. Planning & Design
 
-**A:** Verify that the power cable is securely connected and that the wall outlet is functional.
+Before you touch a screwdriver or install an OS, planning ensures the system is compatible, reliable, and future-proof.  
+This stage addresses **component selection**, **compatibility checks**, **initial risk management**, and **design for maintainability**.
 
----
+### 1.1 Component Compatibility
 
-### Why This Matters
-Many "dead system" cases are caused by simple power issues, not component failure. This step prevents unnecessary part replacements.
+**Example Checkpoint Question**  
+> *SAS cards can also support drives of this interface type.*  
+**Answer:** SATA.
 
----
+**Why This Matters:**  
+SAS controllers are backward compatible with SATA drives, giving flexibility in storage planning. This means you can mix high-performance SAS drives with cost-effective SATA drives in the same server. Knowing compatibility upfront avoids wasted purchases and integration delays.
 
-### Enterprise Context
-- Reduces downtime when supporting multiple workstations by quickly ruling out basic power problems.
+**Broader Exam Connection:**  
+Questions about **interface compatibility** could appear for:
+- USB versions and backward compatibility.
+- RAM generations (DDR3 vs DDR4).
+- PCIe lane requirements for GPUs.
 
-### Home Context
-- Avoids wasted money on new power supplies when the real issue is a loose cable or tripped breaker.
-
----
-
-### Related Concepts
-- Checking the PSU switch.
-- Using a multimeter to verify voltage output.
-
----
-
-**Course Reference:** *Troubleshooting Power Supplies and Motherboards*, p.2.
-
----
-
-### Visual Aid – Basic Power Troubleshooting
-
-```mermaid
-flowchart TD
-    A[Computer won't power on] --> B[Check power cable connection]
-    B --> C[Test wall outlet with another device]
-    C --> D[Ensure PSU switch is ON]
-    D --> E[Replace PSU if all else fails]
-</details>
-```
+**Course Reference:** *Troubleshooting Storage Drives*, p.1–2.
 
 ---
 
